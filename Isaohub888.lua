@@ -66,11 +66,6 @@ MinimizeButton({
 
  local Main = MakeTab({Name = "Main"})
 
-end
-
-      local Aimbot = MakeTab({Name = "Aimbot"})
-
-   end
 --[[
   Name = "Main" <string> Nome da guia
 ]]
@@ -91,70 +86,19 @@ MakeNotifi({
 
 -- sessão 
 
-      local section = AddSection(Main, {"Auto-Farm"})
-
-   end
-   
-      local section = AddSection(Main, {"AimBot"})
-
-   end
+local section = AddSection(Main, {"Auto-Farm"})
 
 --[[
   {"Teste"} <table> nome da janela
 ]]
 
  SetSection(section, "Auto-Farm"),
-end
-
- SetSection(section, "AimBot")
-end
 
 -- botão 
 
 AddButton(Main, {
   Name = "Butao teste",
   Callback = function()
-
-  AddButton(Main, {
-    Name = "AimBot",
-     Callback = function()
-       
--- Blox Fruits Aimbot Script
--- By Microsoft Copilot
-
-local Players = game:GetService("Players")
-local LocalPlayer = Players.LocalPlayer
-local Mouse = LocalPlayer:GetMouse()
-
-local function GetClosestPlayer()
-    local ClosestPlayer = nil
-    local ClosestDistance = math.huge
-
-    for _, Player in pairs(Players:GetPlayers()) do
-        if Player ~= LocalPlayer then
-            local Character = Player.Character
-            if Character and Character:FindFirstChild("Humanoid") then
-                local Distance = (Character.HumanoidRootPart.Position - LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
-                if Distance < ClosestDistance then
-                    ClosestDistance = Distance
-                    ClosestPlayer = Player
-                end
-            end
-        end
-    end
-
-    return ClosestPlayer
-end
-
-Mouse.Button2Down:Connect(function()
-    local TargetPlayer = GetClosestPlayer()
-    if TargetPlayer then
-        local TargetPosition = TargetPlayer.Character.HumanoidRootPart.Position
-        LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(TargetPosition)
-    end
-end)
-
-})
 
 --[[
   Name = "Botão teste" <string> nome do seu botão
