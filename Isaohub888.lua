@@ -64,10 +64,13 @@ MinimizeButton({
 
 -- abas
 
-local Main = MakeTab({Name = "Main"})
+ local Main = MakeTab({Name = "Main"})
 
-local Aimbot = MakeTab({Name = "Aimbot"})
+end
 
+      local Aimbot = MakeTab({Name = "Aimbot"})
+
+   end
 --[[
   Name = "Main" <string> Nome da guia
 ]]
@@ -88,17 +91,23 @@ MakeNotifi({
 
 -- sessão 
 
-local section = AddSection(Main, {"Auto-Farm"})
+      local section = AddSection(Main, {"Auto-Farm"})
 
-local section = AddSection(Main, {"AimBot"})
+   end
+   
+      local section = AddSection(Main, {"AimBot"})
+
+   end
 
 --[[
   {"Teste"} <table> nome da janela
 ]]
 
-SetSection(section, "Auto-Farm")
+ SetSection(section, "Auto-Farm"),
+end
 
-SetSection(section, "AimBot")
+ SetSection(section, "AimBot")
+end
 
 -- botão 
 
