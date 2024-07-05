@@ -4,8 +4,8 @@ local Library = loadstring(game:HttpGet(("https://raw.githubusercontent.com/REDz
 
 MakeWindow({
   Hub = {
-    Title = "REDz HUB",
-    Animation = "by : redz9999"
+    Title = "IsaoHub888",
+    Animation = "by : IsaoMachii"
   },
   Key = {
     KeySystem = false,
@@ -24,8 +24,8 @@ MakeWindow({
 
 --[[
   Hub = {
-    Title = "REDz HUB" -- <string> Titulo do seu script
-    Animation = "by : redz9999" -- <string> Adiciona um texto na animacão do seu HUB
+    Title = "IsaoHub888" -- <string> Titulo do seu script
+    Animation = "by : IsaoMachii" -- <string> Adiciona um texto na animacão do seu HUB
   },
   Key = {
     KeySystem = <bollean> Adiciona um sistema de chaves
@@ -73,30 +73,30 @@ local Main = MakeTab({Name = "Main"})
 -- notificação 
 
 MakeNotifi({
-  Title = "REDz HUB",
-  Text = "Notificação teste",
+  Title = "IsaoHub888",
+  Text = "Valeu-pai",
   Time = 5
 })
 
 --[[
-  Title = "REDz HUB" <string> titulo da notificação
-  Text = "Notificação teste" <string> descrição da notificação
+  Title = "IsaoHub888" <string> titulo da notificação
+  Text = "Valeu-pai" <string> descrição da notificação
   Time = 5 <number> tempo da notificação
 ]]
 
 -- sessão 
 
-local section = AddSection(Main, {"Teste"})
+local section = AddSection(Main, {"Auto-Farm"})
 --[[
   {"Teste"} <table> nome da janela
 ]]
 
-SetSection(section, "HI")
+SetSection(section, "Auto-Farm")
 
 -- botão 
 
 AddButton(Main, {
-  Name = "Botão teste",
+  Name = "Butao teste",
   Callback = function()
     
   end
